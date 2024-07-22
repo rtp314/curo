@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Personal Information</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="padding: 2rem 1rem">
+    <h1>Personal Information</h1>
+    <p>
+      Please provide your personal information. This information will be used to generate all the documents for your
+      visas, work permits, extensions, etc., so please enter the information accurately. If in doubt, always follow what
+      is written in your passport.
+    </p>
+    <p>
+      All your personal information is encrypted and will not be shared with anyone or used for any purpose other than
+      to process your Foundation-related documents.
+    </p>
+    <form class="pure-form pure-form-aligned">
+      <fieldset>
+        <div class="pure-control-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="First Name" />
+        </div>
+        <div class="pure-control-group">
+          <label for="middle-name">Middle Name</label>
+          <input type="text" id="middle-name" placeholder="Middle Name" />
+        </div>
+        <div class="pure-control-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Last Name" />
+        </div>
+        <div class="pure-control-group">
+          <label for="birth-date">Birth Date</label>
+          <input type="date" id="birth-date" placeholder="Birth Date" />
+        </div>
+        <div class="pure-control-group">
+          <label for="birth-place">Birth Place (according to passport)</label>
+          <input type="text" id="birth-place" placeholder="Birth Place" />
+        </div>
+        <div class="pure-control-group">
+          <label for="nationality">Nationality</label>
+          <input type="text" id="nationality" placeholder="Nationality" />
+        </div>
+
+        <h3>Passport Information</h3>
+        <div class="pure-control-group">
+          <label for="passport-number">Passport Number</label>
+          <input type="text" id="passport-number" placeholder="Passport Number" />
+        </div>
+        <div class="pure-control-group">
+          <label for="passport-issued-at">Passport Issued At</label>
+          <input type="text" id="passport-issued-at" placeholder="Passport Issued At" />
+        </div>
+        <div class="pure-control-group">
+          <label for="passport-issue-date">Passport Issue Date</label>
+          <input type="date" id="passport-issue-date" placeholder="Passport Issue Date" />
+        </div>
+        <div class="pure-control-group">
+          <label for="passport-expiry-date">Passport Expiry Date</label>
+          <input type="date" id="passport-expiry-date" placeholder="Passport Expiry Date" />
+        </div>
+
+        <h3>Current Visa Information</h3>
+        <div class="pure-control-group">
+          <label for="visa-type">Current Visa Type</label>
+          <input type="text" id="visa-type" placeholder="Current Visa Type" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrived-by">Arrived By (eg. Plane, Boat, Car)</label>
+          <input type="text" id="arrived-by" placeholder="Arrived By" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrived-from">Arrived From (the country you left to come to Thailand)</label>
+          <input type="text" id="arrived-from" placeholder="Arrived From" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrived-by">Arrived At (eg. Suvarnabhumi Airport)</label>
+          <input type="text" id="arrived-by" placeholder="Arrived At" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrival-date">Date of Arrival in Thailand</label>
+          <input type="date" id="arrival-date" placeholder="Date of Arrival in Thailand" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrived-by">Arrival Card/TM6 Number (if you have one)</label>
+          <input type="text" id="arrived-by" placeholder="TM6 Number" />
+        </div>
+
+        <h3>Address in Thailand</h3>
+        <div class="pure-control-group">
+          <label for="address-number">House Number</label>
+          <input type="text" id="address-number" placeholder="House Number" />
+        </div>
+        <div class="pure-control-group">
+          <label for="address-road">Road</label>
+          <input type="text" id="address-road" placeholder="Road" />
+        </div>
+        <div class="pure-control-group">
+          <label for="address-subdistrict">Subdistrict (Tambon)</label>
+          <input type="text" id="address-subdistrict" placeholder="Subdistrict" />
+        </div>
+        <div class="pure-control-group">
+          <label for="address-district">District (Amphoe)</label>
+          <input type="text" id="address-district" placeholder="District" />
+        </div>
+        <div class="pure-control-group">
+          <label for="address-province">Province (Jangwat)</label>
+          <input type="text" id="address-province" placeholder="Province" />
+        </div>
+        <div class="pure-control-group">
+          <label for="address-code">Postal Code (eg. 54000)</label>
+          <input type="text" id="address-code" placeholder="Postal Code" />
+        </div>
+
+        <div class="pure-controls">
+          <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

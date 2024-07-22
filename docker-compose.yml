@@ -1,0 +1,8 @@
+services:
+  seoapi_audit:
+    build: .
+    ports:
+      - 4000:4000
+    mem_limit: 4G
+    volumes:
+      - .:/usr/src/app
