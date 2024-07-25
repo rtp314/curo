@@ -27,7 +27,6 @@ export type DocumentData = {
   educationLevel: string;
   educationInstitutionAndCountry: string;
   educationGraduatedYear: string;
-  volunteerTel: string;
   volunteerEmail: string;
   volunteerGender: string;
   volunteerHomeCountry: string;
@@ -71,6 +70,11 @@ export type DocumentData = {
   extensionReason2: string;
   extensionReason3: string;
 
+  // work permit
+  workPermitNumber: string;
+  workPermitStartDateThai: string;
+  workPermitExpiryDateThai: string;
+
   // foundation
   orgNameThai: string;
   orgNameEnglish: string;
@@ -93,11 +97,6 @@ export type DocumentData = {
   projectDuration: string;
   projectPositionDescription1: string;
   projectPositionDescription2: string;
-
-  // work permit
-  workPermitNumber: string;
-  workPermitStartDateThai: string;
-  workPermitExpiryDateThai: string;
 
   // extra
   listOfVolunteers: string;

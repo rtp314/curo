@@ -45,7 +45,7 @@ const generateRows = (users: UserRow[]) => {
             size: 28,
           }),
           tableCell({
-            text: 'จำนวนผู้ติดตาม (คน)',
+            text: 'จำนวนผู้ติดตาม  (คน)',
             width: { size: '6%', type: WidthType.PERCENTAGE },
             bold: true,
             size: 28,

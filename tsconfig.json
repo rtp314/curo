@@ -17,12 +17,13 @@
     "esModuleInterop": true,
     "inlineSources": true,
     "skipLibCheck": true,
+    "jsx": "react-jsx",
     // Set `sourceRoot` to  "/" to strip the build path prefix
     // from generated source code references.
     // This improves issue grouping in Sentry.
     "sourceRoot": "/"
   },
-  "include": ["./**/*.ts", "index.ts"],
+  "include": ["./**/*.ts", "index.ts", "./**/*.tsx"],
   "exclude": ["./node_modules/*"],
   "ts-node": {
     // "swc": true,

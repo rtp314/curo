@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch index.ts",
-    "start": "bun index.ts"
+    "start": "bun index.ts",
+    "serve": "vite serve ./react",
+    "build-frontend": "vite build ./react"
   },
   "author": "samuelreed01@gmail.com",
   "license": "ISC",
@@ -15,9 +17,15 @@
     "hono": "^4.4.13",
     "jose": "^5.6.3",
     "mongodb": "^6.8.0",
-    "pdf-lib": "^1.17.1"
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.6"
+    "@types/bun": "^1.1.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.5"
   }
 }

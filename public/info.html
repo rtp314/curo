@@ -25,104 +25,258 @@
     <form class="pure-form pure-form-aligned">
       <fieldset>
         <div class="pure-control-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" placeholder="First Name" />
+          <label for="volunteerTitle">Title</label>
+          <select id="volunteerTitle" name="volunteerTitle">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+          </select>
         </div>
         <div class="pure-control-group">
-          <label for="middle-name">Middle Name</label>
-          <input type="text" id="middle-name" placeholder="Middle Name" />
+          <label for="title">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" />
         </div>
         <div class="pure-control-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" placeholder="Last Name" />
+          <label for="middleName">Middle Name</label>
+          <input type="text" id="middleName" name="middleName" placeholder="Middle Name" />
         </div>
         <div class="pure-control-group">
-          <label for="birth-date">Birth Date</label>
-          <input type="date" id="birth-date" placeholder="Birth Date" />
+          <label for="surname">Last Name</label>
+          <input type="text" id="surname" name="surname" placeholder="Last Name" />
         </div>
         <div class="pure-control-group">
-          <label for="birth-place">Birth Place (according to passport)</label>
-          <input type="text" id="birth-place" placeholder="Birth Place" />
+          <label for="volunteerFullNameThai">Full Name In Thai</label>
+          <input type="text" id="volunteerFullNameThai" name="volunteerFullNameThai" placeholder="Last Name" />
         </div>
         <div class="pure-control-group">
-          <label for="nationality">Nationality</label>
-          <input type="text" id="nationality" placeholder="Nationality" />
+          <label for="volunteerGender">Gender</label>
+          <input type="text" id="volunteerGender" name="volunteerGender" placeholder="Gender" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerMaritalStatus">Marital Status</label>
+          <select id="volunteerMaritalStatus" name="volunteerMaritalStatus">
+            <option value="Married">Married</option>
+            <option selected value="Single">Single</option>
+          </select>
+        </div>
+        <div class="pure-control-group">
+          <label for="birthDate">Birth Date</label>
+          <input type="date" id="birthDate" name="birthDate" placeholder="Birth Date" />
+        </div>
+        <div class="pure-control-group">
+          <label for="placeOfBirth">Birth Place (according to passport)</label>
+          <input type="text" id="placeOfBirth" name="placeOfBirth" placeholder="Birth Place" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerHomeCountry">Home Country</label>
+          <input type="text" id="volunteerHomeCountry" name="volunteerHomeCountry" placeholder="Home Country" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerNationality">Nationality</label>
+          <input type="text" id="volunteerNationality" name="volunteerNationality" placeholder="Nationality" />
+        </div>
+
+        <div class="pure-control-group">
+          <label for="educationLevel">Highest Level Of Education</label>
+          <select id="educationLevel" name="educationLevel">
+            <option value="High School">High School</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+            <option value="PhD">PhD</option>
+          </select>
+        </div>
+        <div class="pure-control-group">
+          <label for="educationInstitution">Educational Institute Name</label>
+          <input
+            type="text"
+            id="educationInstitution"
+            name="educationInstitution"
+            placeholder="Educational Institute Name"
+          />
+        </div>
+        <div class="pure-control-group">
+          <label for="educationCountry">Educational Institute Country</label>
+          <input
+            type="text"
+            id="educationCountry"
+            name="educationCountry"
+            placeholder="Educational Institute Country"
+          />
+        </div>
+        <div class="pure-control-group">
+          <label for="educationGraduatedYear">Year of Graduation</label>
+          <input
+            type="text"
+            id="educationGraduatedYear"
+            name="educationGraduatedYear"
+            placeholder="Year of Graduation"
+          />
+        </div>
+
+        <h3>Address In Thailand:</h3>
+        <div class="pure-control-group">
+          <label for="addressNumber">House Number</label>
+          <input type="text" id="addressNumber" name="addressNumber" placeholder="House Number" />
+        </div>
+        <div class="pure-control-group">
+          <label for="addressRoad">Road</label>
+          <input type="text" id="addressRoad" name="addressRoad" placeholder="Road" />
+        </div>
+        <div class="pure-control-group">
+          <label for="addressSubdistrict">Subdistrict (Tambon)</label>
+          <input type="text" id="addressSubdistrict" name="addressSubdistrict" placeholder="Subdistrict" />
+        </div>
+        <div class="pure-control-group">
+          <label for="addressDistrict">District (Amphoe)</label>
+          <input type="text" id="addressDistrict" name="addressDistrict" placeholder="District" />
+        </div>
+        <div class="pure-control-group">
+          <label for="addressProvince">Province (Jangwat)</label>
+          <input type="text" id="addressProvince" name="addressProvince" placeholder="Province" />
+        </div>
+        <div class="pure-control-group">
+          <label for="addressCode">Postal Code (eg. 54000)</label>
+          <input type="text" id="addressCode" name="addressCode" placeholder="Postal Code" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerAddressThai">Address in Thai</label>
+          <input type="text" id="volunteerAddressThai" name="volunteerAddressThai" placeholder="Address in Thai" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerEmail">Email Address</label>
+          <input type="email" id="volunteerEmail" name="volunteerEmail" placeholder="Email Address" />
+        </div>
+        <div class="pure-control-group">
+          <label for="volunteerPhoneNumber">Phone Number</label>
+          <input type="tel" id="volunteerPhoneNumber" name="volunteerPhoneNumber" placeholder="Phone Number" />
         </div>
 
         <h3>Passport Information</h3>
         <div class="pure-control-group">
-          <label for="passport-number">Passport Number</label>
-          <input type="text" id="passport-number" placeholder="Passport Number" />
+          <label for="passportNumber">Passport Number</label>
+          <input type="text" id="passportNumber" name="passportNumber" placeholder="Passport Number" />
         </div>
         <div class="pure-control-group">
-          <label for="passport-issued-at">Passport Issued At</label>
-          <input type="text" id="passport-issued-at" placeholder="Passport Issued At" />
+          <label for="passportIssuedAt">Passport Issued At</label>
+          <input type="text" id="passportIssuedAt" name="passportIssuedAt" placeholder="Passport Issued At" />
         </div>
         <div class="pure-control-group">
-          <label for="passport-issue-date">Passport Issue Date</label>
-          <input type="date" id="passport-issue-date" placeholder="Passport Issue Date" />
+          <label for="passportIssueDate">Passport Issue Date</label>
+          <input type="date" id="passportIssueDate" name="passportIssueDate" placeholder="Passport Issue Date" />
         </div>
         <div class="pure-control-group">
-          <label for="passport-expiry-date">Passport Expiry Date</label>
-          <input type="date" id="passport-expiry-date" placeholder="Passport Expiry Date" />
+          <label for="passportExpiryDate">Passport Expiry Date</label>
+          <input type="date" id="passportExpiryDate" name="passportExpiryDate" placeholder="Passport Expiry Date" />
         </div>
 
         <h3>Current Visa Information</h3>
         <div class="pure-control-group">
-          <label for="visa-type">Current Visa Type</label>
-          <input type="text" id="visa-type" placeholder="Current Visa Type" />
+          <label for="haveVisa">Currently Have Thai Visa</label>
+          <input type="checkbox" id="haveVisa" name="haveVisa" placeholder="Currently Have Thai Visa" />
         </div>
         <div class="pure-control-group">
-          <label for="arrived-by">Arrived By (eg. Plane, Boat, Car)</label>
-          <input type="text" id="arrived-by" placeholder="Arrived By" />
+          <label for="visaType">Current Visa Type</label>
+          <select id="visaType" name="visaType">
+            <option value="Volunteer">Volunteer</option>
+            <option value="Work">Work</option>
+            <option value="Tourist">Tourist</option>
+            <option value="Education">Education</option>
+            <option value="Retirement">Retirement</option>
+            <option value="Dependent">Dependent</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div class="pure-control-group">
-          <label for="arrived-from">Arrived From (the country you left to come to Thailand)</label>
-          <input type="text" id="arrived-from" placeholder="Arrived From" />
+          <label for="visaIssuedAt">Visa Issued At</label>
+          <input type="text" id="visaIssuedAt" name="visaIssuedAt" placeholder="Visa Issued At" />
         </div>
         <div class="pure-control-group">
-          <label for="arrived-by">Arrived At (eg. Suvarnabhumi Airport)</label>
-          <input type="text" id="arrived-by" placeholder="Arrived At" />
+          <label for="visaIssueDate">Visa Issue Date</label>
+          <input type="date" id="visaIssueDate" name="visaIssueDate" placeholder="Visa Issue Date" />
         </div>
         <div class="pure-control-group">
-          <label for="arrival-date">Date of Arrival in Thailand</label>
-          <input type="date" id="arrival-date" placeholder="Date of Arrival in Thailand" />
+          <label for="visaExpiryDate">Visa Expiry Date</label>
+          <input type="date" id="visaExpiryDate" name="visaExpiryDate" placeholder="Visa Expiry Date" />
         </div>
         <div class="pure-control-group">
-          <label for="arrived-by">Arrival Card/TM6 Number (if you have one)</label>
-          <input type="text" id="arrived-by" placeholder="TM6 Number" />
+          <label for="arrivedBy">Arrived By (eg. Air, Land, Sea)</label>
+          <input type="text" id="arrivedBy" name="arrivedBy" placeholder="Arrived By" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrivedFrom">Arrived From (the country you left to come to Thailand)</label>
+          <input type="text" id="arrivedFrom" name="arrivedFrom" placeholder="Arrived From" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrivedPort">Arrived At (eg. Suvarnabhumi Airport)</label>
+          <input type="text" id="arrivedPort" name="arrivedPort" placeholder="Arrived At" />
+        </div>
+        <div class="pure-control-group">
+          <label for="arrivalDate">Date of Arrival in Thailand</label>
+          <input type="date" id="arrivalDate" name="arrivalDate" placeholder="Date of Arrival in Thailand" />
+        </div>
+        <div class="pure-control-group">
+          <label for="tm6Number">Arrival Card/TM6 Number (if you have one)</label>
+          <input type="text" id="tm6Number" name="tm6Number" placeholder="TM6 Number" />
         </div>
 
-        <h3>Address in Thailand</h3>
+        <h3>Work Permit</h3>
         <div class="pure-control-group">
-          <label for="address-number">House Number</label>
-          <input type="text" id="address-number" placeholder="House Number" />
+          <label for="haveWorkPermit">Currently Have Thai Work Permit</label>
+          <input
+            type="checkbox"
+            id="haveWorkPermit"
+            name="haveWorkPermit"
+            placeholder="Currently Have Thai Work Permit"
+          />
         </div>
         <div class="pure-control-group">
-          <label for="address-road">Road</label>
-          <input type="text" id="address-road" placeholder="Road" />
+          <label for="workPermitNumber">Arrival Card/TM6 Number (if you have one)</label>
+          <input disabled type="text" id="workPermitNumber" name="workPermitNumber" placeholder="TM6 Number" />
         </div>
         <div class="pure-control-group">
-          <label for="address-subdistrict">Subdistrict (Tambon)</label>
-          <input type="text" id="address-subdistrict" placeholder="Subdistrict" />
+          <label for="workPermitIssueDate">Work Permit Issue Date</label>
+          <input
+            disabled
+            type="date"
+            id="workPermitIssueDate"
+            name="workPermitIssueDate"
+            placeholder="Work Permit Issue Date"
+          />
         </div>
         <div class="pure-control-group">
-          <label for="address-district">District (Amphoe)</label>
-          <input type="text" id="address-district" placeholder="District" />
+          <label for="workPermitExpiryDate">Work Permit Expiry Date</label>
+          <input
+            type="date"
+            id="workPermitExpiryDate"
+            name="workPermitExpiryDate"
+            placeholder="Work Permit Expiry Date"
+            disabled
+          />
+        </div>
+
+        <h3>Dependents</h3>
+        <div class="pure-control-group">
+          <label for="haveDependents">I have dependents who will follow me on this visa</label>
+          <input type="checkbox" id="haveDependents" name="haveDependents" />
         </div>
         <div class="pure-control-group">
-          <label for="address-province">Province (Jangwat)</label>
-          <input type="text" id="address-province" placeholder="Province" />
+          <label for="followers">Number of Followers</label>
+          <input disabled value="0" type="number" id="followers" name="followers" />
         </div>
-        <div class="pure-control-group">
-          <label for="address-code">Postal Code (eg. 54000)</label>
-          <input type="text" id="address-code" placeholder="Postal Code" />
-        </div>
+        <div id="dependent-fields"></div>
 
         <div class="pure-controls">
           <button type="submit" class="pure-button pure-button-primary">Submit</button>
         </div>
       </fieldset>
     </form>
+
+    <script src="./js/volunteerFields.js"></script>
+
+    <script>
+      window.addEventListener('domcontentloaded', async () => {
+        const response = await fetch();
+      });
+    </script>
   </body>
 </html>

@@ -54,7 +54,7 @@ export default {
     "Volunteer's Name of Institution Country": 'educationInstitutionAndCountry',
     "Volunteer's Year Fraduated": 'educationGraduatedYear',
     "Volunteer's Address in Thailand": 'addressInThailand',
-    "Volunteer's Tellephone Number": 'volunteerTel',
+    "Volunteer's Tellephone Number": 'volunteerPhoneNumber',
     "Volunteer's Email address": 'volunteerEmail',
     'Passport No': 'passportNumber',
     'Date of Issue': 'passportIssueDate',
