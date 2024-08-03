@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig, loadEnv, UserConfig } from 'vite';
 import path from 'path';
-import react from '@vitejs/plugin-react';
+import preact from '@preact/preset-vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -16,7 +16,18 @@ export default defineConfig(({ mode }) => {
         },
       ],
     },
-    plugins: [react()],
+    plugins: [
+      preact({
+        prefreshEnabled: true,
+        prerender: {
+          enabled: true,
+          renderTarget: '#root',
+          additionalPrerenderRoutes: ['/404'],
+          previewMiddlewareEnabled: true,
+          previewMiddlewareFallback: '/404',
+        },
+      }),
+    ],
     define: {
       __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
     },

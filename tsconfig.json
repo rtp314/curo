@@ -18,10 +18,16 @@
     "inlineSources": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     // Set `sourceRoot` to  "/" to strip the build path prefix
     // from generated source code references.
     // This improves issue grouping in Sentry.
-    "sourceRoot": "/"
+    "sourceRoot": "/",
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"],
+      "@/*": ["./app/src/*"]
+    }
   },
   "include": ["./**/*.ts", "index.ts", "./**/*.tsx"],
   "exclude": ["./node_modules/*"],
